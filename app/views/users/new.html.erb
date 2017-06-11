@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
       <div class="product_single">
-        <h1>Signup!</h1>
+        <h1>Create New User</h1>
         <%= form_tag '/users', method: :post do  %>
           <div class="form-group">
             <%= label_tag :name %>
@@ -36,6 +36,8 @@
             <%= label_tag :zip %>
             <%= text_field_tag :zip, nil, class: "form-control" %>
           </div>
+          <br>
+          <br>
           <div class="form-group">
             <%= label_tag :password %>
             <%= password_field_tag :password, nil, class: "form-control" %>
@@ -44,6 +46,7 @@
             <%= label_tag :password_confirmation %>
             <%= password_field_tag :password_confirmation, nil, class: "form-control" %>
           </div>
+          <br>
           <%= submit_tag "Submit", class: "btn btn-primary" %>
         <% end %>
       </div>
