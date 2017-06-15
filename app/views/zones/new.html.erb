@@ -1,0 +1,23 @@
+<h1>Now we set the safety zone!</h1>
+<h2>The zone will be a rectangle, made of four points.</h2>
+<h2>Just give me the coordinates of two points, the one on the top left, the other on the bottom right, and I'll set it for you!</h2> 
+<br>
+<%= form_tag '/zones', method: :post do %>  
+  <div>
+    <%= label_tag "Top left Latitude:" %>
+    <%= text_field_tag :min_lat %>
+  </div>
+  <div>
+    <%= label_tag "Top left Longitude:" %>
+    <%= text_field_tag :max_long %>
+  </div>
+  <div>
+    <%= label_tag "Bottom Right Latitude:" %>
+    <%= text_field_tag :max_lat %>
+  </div>
+  <div>
+    <%= label_tag "Bottom Right Longitude:" %>
+    <%= text_field_tag :min_long %>
+  </div>
+  <%= submit_tag "Let's Set It!" %>
+<% end %>

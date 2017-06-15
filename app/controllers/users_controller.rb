@@ -18,9 +18,9 @@ class UsersController < ApplicationController
                     )
     if user.save
       session[:user_id] = user.id
-      flash[:success] = "Succefully Created Account"
-      # redirect_to
-    else
+      flash[:success] = "Successfully Created Account"
+      redirect_to '/devices'
+    # else
 
     end
         
