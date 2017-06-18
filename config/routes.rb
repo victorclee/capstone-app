@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
   #user routes
-  get '/home' => 'users#new'
+  get '/' => 'users#new'
   post '/users' => 'users#create'
-
-  #session routes
-  # get '/login'
 
   #device routes
   get '/devices' => 'devices#new'
@@ -15,6 +12,12 @@ Rails.application.routes.draw do
   post '/zones' => 'zones#create'
 
   #location routes
-  get '/locations' => 'locations#new'
+  get '/locations/:zone_id/new' => 'locations#new'
   post '/locations' => 'locations#create'
+  get'/locations/:id' => 'locations#show'
+
+  #session routes
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
 end

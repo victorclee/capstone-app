@@ -1,4 +1,5 @@
-<h1>Enter the coordinates of a location</h1>
+<h1>Where You At?</h1>
+<h1>Enter the coordinates of WYA</h1>
 
 <%= form_tag '/locations', method: :post do %>
   <div>
@@ -9,5 +10,6 @@
     <%= label_tag "Longitude:" %>
     <%= text_field_tag :long %>
   </div>
-  <%= submit_tag "Let's Set It!" %>
+  <br>
+  <%= submit_tag "Here I am, dude." %>
 <% end %>

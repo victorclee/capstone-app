@@ -1,13 +1,13 @@
 <h1>Add a New GPS Device</h1>
 <br>
-<h3>Give your GPS device a nickname:</h3>
-<%= form_tag '/device', method: :post do %>
+<h3>What is the serial number of your GPS device?</h3>
+<%= form_tag '/devices', method: :post do %>
   <div>
-    <%= label_tag :name %>
-    <%= text_field_tag :name %>
+    <%= label_tag :serial_number %>
+    <%= text_field_tag :serial_number %>
   </div>
   <div>
-    <%= submit_tag "Let's name it!" %>
+    <%= submit_tag "Save it!" %>
   </div>
 <% end %>
 
