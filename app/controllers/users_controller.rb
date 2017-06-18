@@ -23,7 +23,5 @@ class UsersController < ApplicationController
     # else
 
     end
-        
   end
-
 end

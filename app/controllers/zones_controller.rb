@@ -11,8 +11,14 @@ class ZonesController < ApplicationController
                     max_long: params[:max_long]
                     )
     if @zone.save
-      flash["success"] = "You've successfully saved a safety zone!"
-      redirect_to "/locations"
+      flash["success"] = "You've successfully created a safety zone!"
+      redirect_to "/zones/#{@zone.id}"
     end
   end
+
+  def show
+    @zone = Zone.find(params[:id])
+  end
+
+
 end

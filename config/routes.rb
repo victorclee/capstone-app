@@ -7,14 +7,15 @@ Rails.application.routes.draw do
   get '/devices' => 'devices#new'
   post '/devices' => 'devices#create'
 
+  #location routes
+  get '/locations' => 'locations#new'
+  post '/locations' => 'locations#create'
+  # get'/locations/:id' => 'locations#show'
+
   #zone routes
   get '/zones' => 'zones#new'
   post '/zones' => 'zones#create'
-
-  #location routes
-  get '/locations/:zone_id/new' => 'locations#new'
-  post '/locations' => 'locations#create'
-  get'/locations/:id' => 'locations#show'
+  get '/zones/:id' => 'zones#show'
 
   #session routes
   get '/login' => 'sessions#new'

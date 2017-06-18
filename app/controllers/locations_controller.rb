@@ -1,6 +1,6 @@
 class LocationsController < ApplicationController
   def new
-    @zone_id = params[:zone_id]
+    # @zone_id = params[:zone_id]
   end
   def create
     @location = Location.new(
@@ -10,13 +10,13 @@ class LocationsController < ApplicationController
                             )
     if @location.save
       flash["success"] = "You've successfully set a location!"
-      redirect_to "/locations/#{@location.id}"
+      redirect_to "/zones"
     end
   end
 
-  def show
-    @location = Location.find(params[:id])
-  end
+  # def show
+  #   @location = Location.find(params[:id])
+  # end
 
 
 end

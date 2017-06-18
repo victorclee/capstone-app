@@ -9,7 +9,7 @@ class DevicesController < ApplicationController
                         )
     if device.save
       flash["success"] = "You've successfully saved a device to your account!"
-      redirect_to "/zones"
+      redirect_to "/locations"
     end
   end
 
