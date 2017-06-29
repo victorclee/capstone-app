@@ -1,7 +1,425 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <title>dejavu</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300i,300,400i,700,700i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+    <header class="site-header logo-centered">
+        <nav class="navbar navbar-default primary-navigation navbar-logo-centered">
+            <div class="container-fluid">
+                <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">DéjàVu</a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper"><span class="sr-only">Toggle navigation</span><span class="first-icon-bar icon-bar"></span><span class="icon-bar"></span><span class="last-icon-bar icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-wrapper">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li role="presentation"><a href="https://wrapbootstrap.com/user/mypreview">BUY </a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Pages <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation"><a href="single-post-without-sidebar.html">POST </a></li>
+                                <li role="presentation"><a href="about.html">About </a></li>
+                                <li role="presentation"><a href="contact.html">Contact </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation"><a href="archive.html">Archive </a></li>
+                        <li role="presentation"><a href="gallery.html">Gallery </a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Extras <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation"><a href="grid.html">Grid </a></li>
+                                <li role="presentation"><a href="elements.html">Elements </a></li>
+                                <li role="presentation"><a href="typography.html">Typography </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="hidden-xs navbar-text navbar-social-icons"><a class="navbar-link navbar-social-icon" href="#"><i class="fa fa-instagram"></i></a><a class="navbar-link navbar-social-icon" href="#"><i class="fa fa-facebook-f"></i></a><a class="navbar-link navbar-social-icon" href="#"><i class="fa fa-twitter"></i></a>
+                        <a
+                        class="navbar-link navbar-social-icon" href="#"><i class="fa fa-pinterest"></i></a>
+                    </p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="highlight-post overlay-dark-5">
+        <div class="container-fluid">
+            <div class="intro">
+                <p class="text-center">babyface alta vista, chat rooms discovery zone</p>
+                <h2 class="text-center">Cory matthews butterfly clips warheads did I do that apollo 13</h2>
+                <div class="buttons"><a class="btn btn-default btn-readmore" role="button" href="#">Read More</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="recent-posts first">
+        <div class="container-fluid">
+            <div class="row headline">
+                <div class="col-sm-12 heading">
+                    <h3>Latest Posts</h3></div>
+            </div>
+            <div class="row posts-wrapper col-3">
+                <div class="col-md-4 col-sm-6 post-grid-wrapper">
+                    <article>
+                        <a href="single-post-with-sidebar.html" class="post-thumbnail"><img class="img-responsive" src="assets/img/home-2-img-6.jpg" alt="image-alternative"></a>
+                        <div class="post-summary">
+                            <h2 class="post-title"><a href="single-post-with-sidebar.html">This Space is Perfect for Inspiring Your Readers with a Bold Title</a></h2>
+                            <div class="post-meta"><span class="post-categories"><a href="archive.html">Beauty &amp; Wellness</a>, <a href="archive.html">Lifestyle </a></span></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4 col-sm-6 post-grid-wrapper">
+                    <article>
+                        <a href="single-post-without-sidebar.html" class="post-thumbnail"><img src="assets/img/home-2-img-7.jpg" alt="image-alternative" class="img-responsive"></a>
+                        <div class="post-summary">
+                            <h2 class="post-title"><a href="single-post-without-sidebar.html">Write a Compelling Blog Post Title Here</a></h2>
+                            <div class="post-meta"><span class="post-categories"><a href="archive.html">Design</a>, <a href="archive.html">Furniture </a></span></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4 col-sm-12 post-grid-wrapper">
+                    <article>
+                        <a href="single-post-with-sidebar.html" class="post-thumbnail"><img src="assets/img/home-2-img-4.jpg" alt="image-alternative" class="img-responsive"></a>
+                        <div class="post-summary">
+                            <h2 class="post-title"><a href="single-post-without-sidebar.html">Captivate Your Readers With an Interesting Blog Post Title</a></h2>
+                            <div class="post-meta"><span class="post-categories"><a href="archive.html">Interiors </a></span></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="recent-posts">
+        <div class="container-fluid">
+            <div class="row headline">
+                <div class="col-sm-6 heading">
+                    <h3>Scrooser </h3></div>
+                <div class="col-sm-6 see-all-posts"><a href="archive.html" class="see-all-posts">See All in Scrooser</a></div>
+            </div>
+            <div class="row posts-wrapper col-2">
+                <div class="col-md-6 col-sm-6 post-grid-wrapper">
+                    <article>
+                        <a href="single-post-with-sidebar.html" class="post-thumbnail"><img src="assets/img/home-2-img-2.jpg" alt="image-alternative" class="img-responsive"></a>
+                        <div class="post-summary">
+                            <div class="post-meta"><span class="post-categories"><a href="archive.html">Style Refresh</a>, <a href="archive.html">Interiors </a></span></div>
+                            <h2 class="post-title"><a href="single-post-with-sidebar.html">Captivate Your Readers With an Interesting Blog Post Title </a></h2></div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-sm-6 post-grid-wrapper">
+                    <article>
+                        <a href="single-post-without-sidebar.html" class="post-thumbnail"><img class="img-responsive" src="assets/img/home-2-img-3.jpg" alt="image-alternative"></a>
+                        <div class="post-summary">
+                            <div class="post-meta"><span class="post-categories"><a href="archive.html">Interiors</a> </span></div>
+                            <h2 class="post-title"><a href="single-post-without-sidebar.html">Draw Readers in With an Alluring Blog Post Title Here</a></h2></div>
+                    </article>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="recent-posts">
+        <div class="container-fluid">
+            <div class="row headline">
+                <div class="col-sm-6 heading">
+                    <h3>Travel </h3></div>
+                <div class="col-sm-6 see-all-posts"><a href="archive.html" class="see-all-posts">See All in Travel</a></div>
+            </div>
+            <div class="row posts-wrapper col-2">
+                <div class="col-sm-12 post-grid-wrapper">
+                    <article>
+                        <a href="single-post-with-sidebar.html" class="post-thumbnail"><img src="assets/img/home-2-img-1.jpg" alt="image-alternative" class="img-responsive"></a>
+                        <div class="post-summary">
+                            <h2 class="post-title"><a href="single-post-with-sidebar.html">This Space is Perfect for Inspiring Your Readers with a Bold Title</a></h2></div>
+                    </article>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="recent-posts">
+        <div class="container-fluid">
+            <div class="row headline">
+                <div class="col-sm-6 heading">
+                    <h3>Interior </h3></div>
+                <div class="col-sm-6 see-all-posts"><a href="archive.html" class="see-all-posts">See All in Interior</a></div>
+            </div>
+            <div class="row posts-wrapper col-2">
+                <div class="col-sm-12 post-grid-wrapper">
+                    <article>
+                        <a href="single-post-without-sidebar.html" class="post-thumbnail"><img src="assets/img/home-2-img-5.jpg" alt="image-alternative" class="img-responsive"></a>
+                        <div class="post-summary">
+                            <h2 class="post-title"><a href="single-post-without-sidebar.html">Captivate Your Readers With an Interesting Blog Post Title</a></h2></div>
+                    </article>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="recent-posts last">
+        <div class="container-fluid">
+            <div class="row headline">
+                <div class="col-sm-6 heading">
+                    <h3>Food </h3></div>
+                <div class="col-sm-6 see-all-posts"><a href="archive.html" class="see-all-posts">See All in Food</a></div>
+            </div>
+            <div class="row posts-wrapper col-3">
+                <div class="col-md-4 col-sm-6 post-grid-wrapper">
+                    <article>
+                        <a href="single-post-with-sidebar.html" class="post-thumbnail"><img class="img-responsive" src="assets/img/home-2-img-8.jpg" alt="image-alternative"></a>
+                        <div class="post-summary">
+                            <h2 class="post-title"><a href="single-post-with-sidebar.html">This Space is Perfect for Inspiring Your Readers with a Bold Title</a></h2></div>
+                    </article>
+                </div>
+                <div class="col-md-4 col-sm-6 post-grid-wrapper">
+                    <article>
+                        <a href="single-post-without-sidebar.html" class="post-thumbnail"><img class="img-responsive" src="assets/img/home-2-img-10.jpg" alt="image-alternative"></a>
+                        <div class="post-summary">
+                            <h2 class="post-title"><a href="single-post-without-sidebar.html">Write a Compelling Blog Post Title Here</a></h2></div>
+                    </article>
+                </div>
+                <div class="col-md-4 col-sm-12 post-grid-wrapper">
+                    <article>
+                        <a href="single-post-without-sidebar.html" class="post-thumbnail"><img class="img-responsive" src="assets/img/home-2-img-9.jpg" alt="image-alternative"></a>
+                        <div class="post-summary">
+                            <h2 class="post-title"><a href="single-post-without-sidebar.html">Captivate Your Readers With an Interesting Blog Post Title</a></h2></div>
+                    </article>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="favorite-products">
+        <div class="container-fluid">
+            <div class="row horizontal-break">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="row headline">
+                <div class="col-sm-12 heading">
+                    <h3 class="text-center">Shop my favorite things</h3></div>
+            </div>
+            <div class="row products-wrapper">
+                <div class="col-md-12">
+                    <ul class="list-unstyled product-slider light-slider clearfix">
+                        <li>
+                            <a href="#" class="product-thumbnail"><img class="img-responsive" src="assets/img/product-slider-5.jpg" alt="image-alternative"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="product-thumbnail"><img class="img-responsive" src="assets/img/product-slider-2.jpg" alt="image-alternative"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="product-thumbnail"><img class="img-responsive" src="assets/img/product-slider-3.jpg" alt="image-alternative"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="product-thumbnail"><img class="img-responsive" src="assets/img/product-slider-6.jpg" alt="image-alternative"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="product-thumbnail"><img class="img-responsive" src="assets/img/product-slider-4.jpg" alt="image-alternative"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="product-thumbnail"><img class="img-responsive" src="assets/img/product-slider-8.jpg" alt="image-alternative"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="product-thumbnail"><img class="img-responsive" src="assets/img/product-slider-7.jpg" alt="image-alternative"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="product-thumbnail"><img class="img-responsive" src="assets/img/product-slider-1.jpg" alt="image-alternative"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row see-all-products">
+                <div class="col-md-12">
+                    <p class="text-center"><a href="#" class="btn btn-lg btn-submit-inverse btn-sell-all-products">See All Products</a></p>
+                </div>
+            </div>
+            <div class="row horizontal-break">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="posts-widgets">
+        <div class="container-fluid">
+            <div class="row widgets">
+                <div class="col-md-6 col-sm-12 left">
+                    <div class="row headline">
+                        <div class="col-sm-12 heading">
+                            <h3>Most Popular</h3></div>
+                    </div>
+                    <div class="row post-widget-wrapper">
+                        <div class="col-md-5 col-sm-5">
+                            <a href="single-post-with-sidebar.html" class="post-thumbnail"><img class="img-responsive" src="assets/img/home-2-img-11.jpg" alt="image-alternative"></a>
+                        </div>
+                        <div class="col-md-7 col-sm-7">
+                            <div class="post-summary">
+                                <h2 class="post-title"><a href="single-post-with-sidebar.html">Draw Readers in With an Alluring Blog Post Title Here</a></h2></div>
+                        </div>
+                    </div>
+                    <div class="row post-widget-wrapper">
+                        <div class="col-md-5 col-sm-5">
+                            <a href="single-post-with-sidebar.html" class="post-thumbnail"><img class="img-responsive" src="assets/img/home-2-img-13.jpg" alt="image-alternative"></a>
+                        </div>
+                        <div class="col-md-7 col-sm-7">
+                            <div class="post-summary">
+                                <h2 class="post-title"><a href="single-post-with-sidebar.html">This Space is Perfect for Inspiring Your Readers with a Bold Title</a></h2></div>
+                        </div>
+                    </div>
+                    <div class="row post-widget-wrapper">
+                        <div class="col-md-5 col-sm-5">
+                            <a href="single-post-with-sidebar.html" class="post-thumbnail"><img class="img-responsive" src="assets/img/home-2-img-15.jpg" alt="image-alternative"></a>
+                        </div>
+                        <div class="col-md-7 col-sm-7">
+                            <div class="post-summary">
+                                <h2 class="post-title"><a href="single-post-with-sidebar.html">Write a Compelling Blog Post Title Here</a></h2></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 right">
+                    <div class="row headline">
+                        <div class="col-sm-12 heading">
+                            <h3>Currently On Tap </h3></div>
+                    </div>
+                    <div class="row post-widget-wrapper">
+                        <div class="col-md-5 col-sm-5">
+                            <a href="single-post-without-sidebar.html" class="post-thumbnail"><img class="img-responsive" src="assets/img/home-2-img-12.jpg" alt="image-alternative"></a>
+                        </div>
+                        <div class="col-md-7 col-sm-7">
+                            <div class="post-summary">
+                                <h2 class="post-title"><a href="single-post-without-sidebar.html">Captivate Your Readers With an Interesting Blog Post Title</a></h2></div>
+                        </div>
+                    </div>
+                    <div class="row post-widget-wrapper">
+                        <div class="col-md-5 col-sm-5">
+                            <a href="single-post-without-sidebar.html" class="post-thumbnail"><img class="img-responsive" src="assets/img/home-2-img-14.jpg" alt="image-alternative"></a>
+                        </div>
+                        <div class="col-md-7 col-sm-7">
+                            <div class="post-summary">
+                                <h2 class="post-title"><a href="single-post-without-sidebar.html">Draw Readers in With an Alluring Blog Post Title Here</a></h2></div>
+                        </div>
+                    </div>
+                    <div class="row post-widget-wrapper">
+                        <div class="col-md-5 col-sm-5">
+                            <a href="single-post-without-sidebar.html" class="post-thumbnail"><img class="img-responsive" src="assets/img/home-2-img-16.jpg" alt="image-alternative"></a>
+                        </div>
+                        <div class="col-md-7 col-sm-7">
+                            <div class="post-summary">
+                                <h2 class="post-title"><a href="single-post-without-sidebar.html">This Space is Perfect for Inspiring Your Readers with a Bold Title </a></h2></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="dual-call-to-action overlay-dark-5">
+        <div class="container-fluid">
+            <div class="intro">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 left"></div>
+                    <div class="col-md-6 col-sm-6 right">
+                        <p class="text-center">Super mario world </p>
+                        <h2 class="text-center">I believe I can fly desert storm</h2>
+                        <div class="buttons"><a class="btn btn-default btn-readmore" role="button" href="#">Learn More</a></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="instafeed">
+        <div class="container-fluid">
+            <div class="row headline">
+                <div class="col-sm-12 heading">
+                    <p class="text-center">Stay in the Know</p>
+                    <h2 class="text-center">FOLLOW US</h2></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="list-inline list-unstyled text-center" id="instafeed" data-user-id="3313247884" data-access-token="3313247884.8d186ee.e6271b972d1141129c68696535ee4464" data-amount="8">
+                        <li> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="newsletter-subscribe overlay-dark-3">
+        <div class="container-fluid">
+            <div class="intro">
+                <header>
+                    <h2 class="text-center heading">Subscribe for our Newsletter</h2>
+                    <p class="text-center extra-info">Use the Newsletter Block below to collect email addresses. Learn more <a href="#">here </a></p>
+                </header>
+                <form class="form-inline" method="get" target="_self" enctype="multipart/form-data" name="newsletter-subscribe">
+                    <div class="form-group newsletter-input-wrapper">
+                        <input class="form-control" type="email" name="email" required="" placeholder="Email Address">
+                    </div>
+                    <div class="form-group newsletter-button-wrapper">
+                        <button class="btn btn-default btn-submit-inverse" type="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <ul class="list-inline text-center footer-menu">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="404.html">Not Found</a></li>
+        </ul>
+        <div class="text-center footer-social-icons"><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="fa fa-pinterest"></i></a></div>
+        <p class="text-center copyright">Powered by <a href="#">MyPreview </a></p>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcdTM0ASgFVJOjxYLbEipAunbe9hcTtiU"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gmap3/7.2.0/gmap3.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------
+
+
+
+<!DOCTYPE html>
+<html>
   <head>
-    <title>Victor's Capstone</title>
+    <title>track[:it]</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -20,7 +438,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">Victor's Capstone</a>
+        <a class="navbar-brand" href="/">track[:it]</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
