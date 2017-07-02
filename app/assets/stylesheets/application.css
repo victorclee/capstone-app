@@ -16,13 +16,16 @@
 
 #map {
   height: 400px;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
  }
 
  .content {
   width: 70%;
   margin: 0 auto;
  }
+
+ 
 
 
 
