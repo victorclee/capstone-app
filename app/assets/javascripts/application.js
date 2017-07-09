@@ -18,36 +18,54 @@
 
 
 function initMap() {
-  var uluru = {lat: 23.004321, lng: 120.209057};
+  var actualize = {lat: 41.892136, lng: -87.634830};
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 15,
-    center: uluru
+    zoom: 17,
+    center: actualize
   });
   var marker = new google.maps.Marker({
-    position: uluru,
+    position: actualize,
     map: map
   });
-  var drawingManager = new google.maps.drawing.DrawingManager({
-      drawingMode: google.maps.drawing.OverlayType.MARKER,
-      drawingControl: true,
-      drawingControlOptions: {
-        position: google.maps.ControlPosition.TOP_CENTER,
-        drawingModes: ['rectangle']
-      },
-      rectangleOptions: {
-        fillColor: '#eb5e88',
-        fillOpacity: 0.5,
-        strokeColor: '#eb5e88',
-        strokeWeight: 2,
-        clickable: false,
-        editable: false,
-        zIndex: 1
-      }
-    });
-    drawingManager.setMap(map);
+
+  var rectangleCoords = [
+    new google.maps.LatLng(41.892400, -87.635600),
+    new google.maps.LatLng(41.891500, -87.635600),
+    new google.maps.LatLng(41.891500, -87.634075),
+    new google.maps.LatLng(41.892400, -87.634075)
+  ];
+  // Styling & Controls
+  myRectangle = new google.maps.Polygon({
+    paths: rectangleCoords,
+    draggable: true,
+    editable: true,
+    strokeColor: '#eb5e88',
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: '#eb5e88',
+    fillOpacity: 0.5
+  });
+
+  myRectangle.setMap(map);
+  //google.maps.event.addListener(myRectangle, "dragend", getPolygonCoords);
+  google.maps.event.addListener(myRectangle.getPath(), "insert_at", getPolygonCoords);
+  //google.maps.event.addListener(myRectangle.getPath(), "remove_at", getPolygonCoords);
+  google.maps.event.addListener(myRectangle.getPath(), "set_at", getPolygonCoords);
 
 }
 
-    function removeZone() {
-      google.maps.drawing.setMap(null);
+
+    //Display Coordinates below map
+    function getPolygonCoords() {
+      var len = myRectangle.getPath().getLength();
+      var htmlStr = "";
+      for (var i = 0; i < len; i++) {
+        htmlStr += "(" + myRectangle.getPath().getAt(i).toUrlValue(6) + "), ";
+        //Use this one instead if you want to get rid of the wrap > new google.maps.LatLng(),
+        //htmlStr += "" + myRectangle.getPath().getAt(i).toUrlValue(5);
+      }
+      document.getElementById('info').innerHTML = htmlStr;
+    }
+    function copyToClipboard(text) {
+      window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
     }

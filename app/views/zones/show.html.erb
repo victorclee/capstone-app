@@ -6,9 +6,6 @@
 <h2>Your minimum longitude: <%= @zone.min_long %></h2>
 
 <h3>Set your zone on the map!</h3>
-<div>
-  <input onclick="removeZone();" type=button value="Remove zone">
-</div>
 <br>
 <div id="map"></div>
 <script async defer
@@ -16,5 +13,9 @@ src="https://maps.googleapis.com/maps/api/js?key=<%=ENV["GOOGLE_API_KEY"]%>&libr
 </script>
 
 
+<body onload="getPolygonCoords()">
+</body>
+<button id="clipboard-btn" onclick="copyToClipboard(document.getElementById('info').innerHTML)">Copy to Clipboard</button>
+<textarea id="info"></textarea>
 
 
