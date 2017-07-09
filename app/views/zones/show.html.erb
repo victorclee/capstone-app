@@ -1,6 +1,9 @@
+<div id="zone-id" hidden="true"><%= @zone.id %></div>
+
 <h1>Your Safety Zone Show Page</h1>
 <br>
 <h2>Your maximum latitude: <%= @zone.max_lat %></h2>
+<div id="max_lat" hidden="true"><%= @zone.max_lat %></div>
 <h2>Your maximum longitude: <%= @zone.max_long %></h2>
 <h2>Your minimum latitude: <%= @zone.min_lat %></h2>
 <h2>Your minimum longitude: <%= @zone.min_long %></h2>
@@ -12,10 +15,10 @@
 src="https://maps.googleapis.com/maps/api/js?key=<%=ENV["GOOGLE_API_KEY"]%>&libraries=drawing&callback=initMap"" >
 </script>
 
-
-<body onload="getPolygonCoords()">
+<!-- Below is for polygon -->
+<!-- <body onload="getPolygonCoords()">
 </body>
 <button id="clipboard-btn" onclick="copyToClipboard(document.getElementById('info').innerHTML)">Copy to Clipboard</button>
-<textarea id="info"></textarea>
-
+<textarea id="info"></textarea> -->
+<!-- end -->
 
