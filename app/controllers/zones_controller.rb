@@ -20,8 +20,14 @@ class ZonesController < ApplicationController
     @zone = Zone.find(params[:id])
   end
 
-  def edit
-    
-  end
+  # def update
+  #   @zone = Zone.find(params[:id])
+  #   @zone = Zone.update(
+  #                       min_lat: params[:min_lat],
+  #                       max_lat: params[:max_lat],
+  #                       min_long: params[:min_long],
+  #                       max_long: params[:max_long]
+  #                       )
+  # end
 
 end
