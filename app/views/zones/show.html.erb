@@ -1,20 +1,20 @@
-<div id="zone-id" hidden="true"><%= @zone.id %></div>
-
-<h1>Your Safety Zone Show Page</h1>
+<h1>Set your Safety Zone!</h1>
 <br>
 <h2>Your maximum latitude: <%= @zone.max_lat %></h2>
-<div id="max_lat" hidden="true"><%= @zone.max_lat %></div>
 <h2>Your maximum longitude: <%= @zone.max_long %></h2>
 <h2>Your minimum latitude: <%= @zone.min_lat %></h2>
 <h2>Your minimum longitude: <%= @zone.min_long %></h2>
 
-<h3>Set your zone on the map!</h3>
+<button onclick="updateZone()">Yup, looks good! Set it!</button>
+<br>
+<br>
 <br>
 <div id="map"></div>
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=<%=ENV["GOOGLE_API_KEY"]%>&libraries=drawing&callback=initMap"" >
 </script>
 
+<div id="zone-id" hidden="true"><%= @zone.id %></div>
 <!-- Below is for polygon -->
 <!-- <body onload="getPolygonCoords()">
 </body>
