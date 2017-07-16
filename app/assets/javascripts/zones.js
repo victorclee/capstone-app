@@ -5,6 +5,8 @@ var params;
 
 
 function initMap() {
+
+  
   var actualize = {lat: 41.892136, lng: -87.634830};
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 17,
@@ -121,3 +123,4 @@ function updateZone() {
     // function copyToClipboard(text) {
     //   window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
     // }
+

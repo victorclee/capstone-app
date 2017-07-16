@@ -1,18 +1,26 @@
-<h1>Set your Safety Zone!</h1>
-<br><!-- 
+<!-- 
 <h2>Your maximum latitude: <%= @zone.max_lat %></h2>
 <h2>Your maximum longitude: <%= @zone.max_long %></h2>
 <h2>Your minimum latitude: <%= @zone.min_lat %></h2>
 <h2>Your minimum longitude: <%= @zone.min_long %></h2> -->
 
-<button onclick="updateZone()">Yup, looks good! Set it!</button>
-<br>
-<br>
+<div class="row"> 
+  <h1 class="col-sm-12" style="font-family:'Lora'">Set your Safety Zone!</h1>  
+</div>
+<div class="row"> 
+  <h3 class="col-sm-12" style="font-family:'Lora'">Drag, resize, re-drag, re-resize the red zone below!</h3>  
+</div>
+<div style="text-align: center;font-family:'Lora'">
+  <button onclick="updateZone()">Yup, looks good! Let's set it!</button>
+</div>
 <br>
 <div id="map"></div>
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=<%=ENV["GOOGLE_API_KEY"]%>&libraries=drawing&callback=initMap"" >
 </script>
+<br>
+<br>
+<div id="div3" style="text-align: center;display: none;font-family:'Lora'"><h1>Zone set successfully!</h1></div>
 
 <div id="zone-id" hidden="true"><%= @zone.id %></div>
 <!-- Below is for polygon -->

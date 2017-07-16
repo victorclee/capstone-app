@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
 #map {
   height: 400px;
   width: 90%;
@@ -7,4 +9,8 @@
  .content {
   width: 70%;
   margin: 0 auto;
+ }
+
+ div.row {
+  text-align: center;
  }

@@ -19,6 +19,15 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#div3").fadeIn(3000);
+        });
+    });
+    </script>
+
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -29,7 +38,7 @@
     <header class="site-header logo-centered">
         <nav class="navbar navbar-default primary-navigation navbar-logo-centered">
             <div class="container-fluid">
-                <div class="navbar-header"><a class="navbar-brand navbar-link" href="/">track(it)</a>
+                <div class="navbar-header"><a class="navbar-brand navbar-link" href="/zones/11">track(it)</a>
 
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-wrapper">
@@ -57,7 +66,7 @@
             <div class="intro">
                 <p class="text-center">what is track(it)?</p>
                 <h2 class="text-center">Set a safety zone, give your loved ones a GPS device, and let track(it) watch them for you</h2>
-                <div class="buttons"><a class="btn btn-default btn-readmore" role="button" href="https://www.linkedin.com/in/victorchristopherlee/" target="_blank">Who made this app?</a></div>
+                <div class="buttons"><a class="btn btn-default btn-readmore" role="button" href="/zones/11">Let's track(it)!</a></div>
             </div>
         </div>
     </div>
