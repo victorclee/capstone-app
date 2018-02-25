@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       flash[:success] = "Successfully logged in"
       if current_user.id
-        redirect_to "/locations"
+        redirect_to "/zones/1"
       else
         render "/devices"
       end

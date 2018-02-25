@@ -14,3 +14,7 @@
  div.row {
   text-align: center;
  }
+
+#center {
+  margin: auto;
+}
