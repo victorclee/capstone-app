@@ -10,10 +10,10 @@ class ZonesController < ApplicationController
                     min_long: params[:min_long],
                     max_long: params[:max_long]
                     )
-    # if @zone.save
-    #   flash["success"] = "You've successfully created a safety zone!"
-    #   redirect_to "/zones/#{@zone.id}"
-    # end
+    if @zone.save
+      flash["success"] = "You've successfully created a safety zone!"
+      redirect_to "/zones/#{@zone.id}"
+    end
   end
 
   def show
