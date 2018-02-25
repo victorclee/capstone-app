@@ -2,15 +2,15 @@ Rails.application.routes.draw do
   
       #user routes
       get '/' => 'users#new'
-      post '/users' => 'users#create'
+      # post '/users' => 'users#create'
 
       #device routes
-      get '/devices' => 'devices#new'
-      post '/devices' => 'devices#create'
+      # get '/devices' => 'devices#new'
+      # post '/devices' => 'devices#create'
 
       #location routes
-      get '/locations' => 'locations#new'
-      post '/locations' => 'locations#create'
+      # get '/locations' => 'locations#new'
+      # post '/locations' => 'locations#create'
       # get'/locations/:id' => 'locations#show'
 
       #session routes
