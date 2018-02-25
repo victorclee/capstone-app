@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def new
-
+    redirect_to '/zones/11'
   end
   def create
     user = User.new(
